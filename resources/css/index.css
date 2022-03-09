@@ -22,22 +22,36 @@ main {
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 2%;
+    padding: 2% 0;
+    align-items: center;
 }
 
 .navmenu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
     font-weight: bold;
 }
 
-.navbar img {
+.navbaritem {
+    float: right;
+    padding: 0 1%;
+}
+
+#emailme img {
+    max-width: 35px;
+    min-width: 35px;
+    height: auto;
+}
+
+#linkedinme img {
+    max-width: 35px;
+    min-width: 35px;
+    height: auto;
+}
+
+#profilepic {
+    justify-self: left;
     max-width: 30%;
     height: auto;
     border-radius: 50%;
-    margin-top: 5%;
 }
 
 /* DEFAULT TEXT */
@@ -83,22 +97,17 @@ h5 {
 .CVbody {
     display: grid;
     grid-template: 
-            "a b" 1fr
+            "a a" 1fr
             "c d" auto
             "e e" 1fr / 3fr 1fr;
 }
 
 .profilecontainer {
     grid-area: a;
+    width: 95%;
+    margin-bottom: 5%;
 }
 
-.contactcontainer {
-    grid-area: b;
-}
-
-.contactitem {
-    padding: 15px 0;
-}
 
 /* EXPERIENCE SECTION */
 
@@ -154,33 +163,19 @@ strong {
     padding: 15px 0;
 }
 
-/* CONTACT SECTION */
-
-#emailme img {
-    width: 25px;
-    height: auto;
-}
-
-#linkedinme img {
-    width: 25px;
-    height: auto;
-}
-
 @media only screen and (max-width: 750px){
     main {
         margin: 1%;
     }
     .CVbody {
         grid-template: 
-                "a b" auto
+                "a a" auto
                 "c c" auto
                 "d d" auto
                 "e e" auto/auto auto;
     }
 
-    .profilecontainer {
-        padding-right: 2%;
-    }
+
     .experiencecontainer{
         justify-content: center;
         width: 100%;
@@ -212,7 +207,7 @@ strong {
     }
 
     .navbar {
-        padding-top: 5px;
+        padding-top: 15px;
     }
 
     .navbar img {
