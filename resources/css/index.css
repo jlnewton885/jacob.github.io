@@ -22,7 +22,7 @@ main {
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2% 0;
+    padding-top: 2%;
     align-items: center;
 }
 
@@ -69,21 +69,20 @@ h2 {
 }
 
 h3 {
-    color: #B4E100;
     font-size: 1.25rem;
     font-style: italic;
     font-weight: 900;
 }
 
 h4 {
-    color: #B4E100;
+    color: #0099FF;
     font-weight: 900;
     font-style: italic;
     font-size: 1rem;
 }
 
 h5 {
-    color: #B4E100;
+    color: #0099FF;
     font-weight: 900;
     font-style: italic;
     font-size: 1rem;
@@ -105,7 +104,8 @@ h5 {
 .profilecontainer {
     grid-area: a;
     width: 95%;
-    margin-bottom: 5%;
+    margin: 5% 0;
+    align-self: center;
 }
 
 
@@ -124,8 +124,7 @@ h5 {
 }
 
 .experienceitem p {
-    text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
 }
 
 .experienceinfo {
@@ -133,6 +132,7 @@ h5 {
     grid-template: 
             "a b c" 1fr / 3fr 1fr 1fr;
     align-items: center;
+    padding-bottom: 2%;
 }
 
 .experienceinfo h3 {
@@ -150,10 +150,11 @@ h5 {
 }
 
 
-
 strong {
     font-weight: 700;
 }
+
+/* EDUCATION SECTION */
 
 .educationcontainer {
     grid-area: d;
