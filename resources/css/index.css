@@ -20,12 +20,6 @@ main {
     background-color: white;
 }
 
-@media only screen and (max-width: 450px){
-    main {
-        margin: 1%;
-    }
-}
-
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -41,13 +35,14 @@ main {
 }
 
 .navbar img {
-    width: 30%;
+    max-width: 30%;
     height: auto;
     border-radius: 50%;
     margin-top: 5%;
 }
 
 /* DEFAULT TEXT */
+
 h1 {
     font-size: 3rem;
     font-style: italic;
@@ -170,4 +165,64 @@ strong {
 #linkedinme img {
     width: 25px;
     height: auto;
+}
+
+@media only screen and (max-width: 750px){
+    main {
+        margin: 1%;
+    }
+    .CVbody {
+        grid-template: 
+                "a b" auto
+                "c c" auto
+                "d d" auto
+                "e e" auto/auto auto;
+    }
+
+    .profilecontainer {
+        padding-right: 2%;
+    }
+    .experiencecontainer{
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .experienceitem p {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    
+    h5 {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding-top: 5px;
+    }
+
+    .navbar img {
+        min-width: 50px;
+    }
+
+    .navmenu a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
 }
